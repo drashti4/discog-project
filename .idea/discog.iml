@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="reza_server_express" />
+    <orderEntry type="module" module-name="exercise-js-react-form-title" />
+    <orderEntry type="module" module-name="exercise-js-react-form" />
+    <orderEntry type="module" module-name="node-server-excercise" />
+    <orderEntry type="module" module-name="exercise-js-react-async-list" />
+  </component>
+</module>
