@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0a042b6-b270-456e-8529-07320222cc9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discog.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/components/EditUserComponent.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/components/UserComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/HTTPHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/node-fs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client" beforeDir="false" afterPath="$PROJECT_DIR$/client" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" />
@@ -109,7 +94,7 @@
       <workItem from="1586193501979" duration="2079000" />
       <workItem from="1586200850064" duration="5088000" />
       <workItem from="1586213646134" duration="6723000" />
-      <workItem from="1586279109317" duration="13482000" />
+      <workItem from="1586279109317" duration="13753000" />
     </task>
     <servers />
   </component>
