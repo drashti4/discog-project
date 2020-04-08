@@ -21,5 +21,5 @@ app.delete('/users/:id',httpHandler.deleteUser);
 
 app.get('/tracks',httpHandler.getAllTracks);
 app.delete('/track/:id',httpHandler.deleteTrackById);
-app.post('/tracks',httpHandler.getAllTracks);
+app.post('/track',httpHandler.addTrackToList);
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

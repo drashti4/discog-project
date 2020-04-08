@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0a042b6-b270-456e-8529-07320222cc9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/EditUserComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/UserComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client" beforeDir="false" afterPath="$PROJECT_DIR$/client" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/setupTests.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/rest-test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/database/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/HTTPHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/HTTPHandler.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +19,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -46,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Excercise/exercise-js-react-async-list" />
@@ -72,10 +69,40 @@
       <recent name="C:\isi\React.js\discog\server" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3002/track" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;playlistID&quot;: 1,&#10;  &quot;title&quot;:&quot;Bhumit&quot;,&#10;  &quot;uri&quot;: &quot;http:&quot;,&#10;  &quot;master_id&quot; : 456&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.rest-test#2">
+    <configuration name="rest-test#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/server/rest-test.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.rest-test#2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -94,7 +121,8 @@
       <workItem from="1586193501979" duration="2079000" />
       <workItem from="1586200850064" duration="5088000" />
       <workItem from="1586213646134" duration="6723000" />
-      <workItem from="1586279109317" duration="13753000" />
+      <workItem from="1586279109317" duration="16153000" />
+      <workItem from="1586305444249" duration="2172000" />
     </task>
     <servers />
   </component>
@@ -110,22 +138,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586201482471" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1586201600353">
+    <state width="1488" height="207" key="GridCell.Tab.0.bottom" timestamp="1586301989646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586201600353" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1586201600353">
+    <state width="1488" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586301989646" />
+    <state width="1488" height="207" key="GridCell.Tab.0.center" timestamp="1586301989645">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586201600353" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1586201600353">
+    <state width="1488" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586301989645" />
+    <state width="1488" height="207" key="GridCell.Tab.0.left" timestamp="1586301989645">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586201600353" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1586201600353">
+    <state width="1488" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586301989645" />
+    <state width="1488" height="207" key="GridCell.Tab.0.right" timestamp="1586301989646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586201600353" />
+    <state width="1488" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586301989646" />
     <state x="279" y="58" key="SettingsEditor" timestamp="1586201778099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -18,13 +18,11 @@ function getAllTracks(request,response){
 }
 
 function deleteTrackById(request, response){
-    /*const paramID = parseInt(request.params.id);
-    objFS.removeData(DATA_FILE, paramID);
-    response.status(STATUS_OK).json({
-        msg: 'user deleted'
-    });*/
     db.deleteTrackById(request, response);
+}
 
+function addTrackToList(request, response) {
+    db.insertTrack(request, response);
 }
 
 function sendRootPage(request, response){
@@ -87,5 +85,6 @@ module.exports = {
     getUsers,
     sendRootPage,
     getAllTracks,
-    deleteTrackById
+    deleteTrackById,
+    addTrackToList
 };

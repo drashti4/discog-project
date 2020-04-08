@@ -18,11 +18,6 @@ const trackTable = 'track';
 const selectTracksCommand = `select * from ${trackTable}`;
 
 module.exports = {
-    query: (sqlStatement) => {
-        return pool.query(sqlStatement)
-        //.then(response => response.rows)
-        //.catch(error => console.log(error));
-    },
 
     getAllTracks: (request, response) => {
         pool.query(selectTracksCommand, (error, results) => {
@@ -33,23 +28,29 @@ module.exports = {
         })
     },
 
-    deleteTrackById: (request, response) => {
 
-    pool.query(`DELETE FROM track WHERE id=${request.params.id}`, function(err) {
+    insertTrack:(request, response)=>{
+        pool.query(`INSERT INTO ${trackTable} (playlist_id, title, uri, master_id)` +
+            `VALUES (${parseInt(request.body.playlistID)},'${request.body.title}',
+            '${request.body.uri}',${parseInt(request.body.master_id)})`, function(err) {
+            if (err) {
+                return console.error(err.message);
+            }
+            response.status(200).json({
+                msg: 'track added'
+            })
+        })
+    },
+
+    deleteTrackById: (request, response) => {
+    pool.query(`DELETE FROM ${trackTable} WHERE id=${request.params.id}`, function(err) {
         if (err) {
             return console.error(err.message);
         }
-
         response.status(200).json({
-            msg: 'user deleted'
+            msg: 'track deleted'
         })
     })
-    },
-
-
-    insertTrack:(playlistID, title, uri, master_id)=>{
-        return pool.query(`INSERT INTO ${trackTable} (playlist_id, title, uri, master_id)` +
-             `VALUES (${playlistID},'${title}','${uri}',${master_id})`)
-
     }
-};
+
+}
