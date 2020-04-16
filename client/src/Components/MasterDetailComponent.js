@@ -15,41 +15,41 @@ export default class MasterDetailComponent extends React.Component
                         <td  className="styleTabs"><span>{data.title}</span></td>
                     </tr>
                     {data.styles!== undefined?
-                    <tr>
+                        <tr>
                             <th>Styles</th><td  className="styleTabs">{ data.styles.map((_val,key)=>{
-                                return(<span>{_val}</span>)
+                            return(<span>{_val}</span>)
                         }) }
-                    </td>
+                        </td>
                         </tr>:null}
                     {data.genres!== undefined?
-                    <tr>
-                        <th>Genres</th><td  className="styleTabs">{ data.genres.map((_val,key)=>{
-                        return(<span>{_val}</span>)
-                    }) }
-                    </td>
-                    </tr>
-                    :null
+                        <tr>
+                            <th>Genres</th><td  className="styleTabs">{ data.genres.map((_val,key)=>{
+                            return(<span>{_val}</span>)
+                        }) }
+                        </td>
+                        </tr>
+                        :null
                     }
 
-                    {data.artist != undefined?
-                    <tr>
-                        <th>Artists</th><td  className="styleTabs">{ data.artists.map((_val,key)=>{
-                        return(<span>{_val.name}</span>)
-                    }) }
-                    </td>
-                    </tr>
+                    {data.artist !== undefined?
+                        <tr>
+                            <th>Artists</th><td  className="styleTabs">{ data.artists.map((_val,key)=>{
+                            return(<span>{_val.name}</span>)
+                        }) }
+                        </td>
+                        </tr>
                         :null}
 
                     {data.videos !== undefined?
-                    <tr>
-                        <th>Videos</th><td className="styleLinks">
-                        {data.videos.map((_val,_key)=>{
-                            return(
-                                <><span><a target="_blank" href={_val.uri}>{_val.title}</a></span><br /></>
-                            )
-                        })}
-                    </td>
-                    </tr>
+                        <tr>
+                            <th>Videos</th><td className="styleLinks">
+                            {data.videos.map((_val,_key)=>{
+                                return(
+                                    <><span><a target="_blank" rel="noopener noreferrer" href={_val.uri}>{_val.title}</a></span><br /></>
+                                )
+                            })}
+                        </td>
+                        </tr>
                         :null}
                     {data.tracklist !== undefined?
                         <tr>
