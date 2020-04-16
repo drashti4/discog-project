@@ -16,22 +16,32 @@ const pool = new Pool({
 const playlistTable = 'playlist';
 const trackTable = 'track';
 const selectTracksCommand = `select * from ${trackTable}`;
-const selectTitlePlaylist = `select * from ${playlistTable}`;
 
 module.exports = {
 
     getAllTracks: (request, response) => {
-        pool.query(selectTracksCommand, (error, results) => {
-            if (error) {
-                throw error
-            }
-            response.status(200).json(results.rows)
-        })
+        pool.query(selectTracksCommand)
+            .then(result => response.status(200).json(result.rows))
+            .catch(e => console.error(e.stack));
     },
 
     insertTrack:(request, response)=>{
         let genre = request.body.genres[0];
-        pool.query("SELECT * FROM "+playlistTable+" WHERE title=($1)", [genre], (error, result) => {
+
+        pool.query("SELECT * FROM "+playlistTable+" WHERE title=($1)", [genre])
+            .then(result => {
+                if (result.rows.length > 0) {
+                    if (result) {
+                        result.rows.forEach((row) => {
+                            module.exports.addExistingTrack(request, response, row.id);
+                        });
+                    }
+                } else {
+                    module.exports.addExistingTrack(request, response, 1);
+                }
+            }) .catch(e => console.error(e.stack));
+
+       /* pool.query("SELECT * FROM "+playlistTable+" WHERE title=($1)", [genre], (error, result) => {
             if (error) {
                 return console.error(error.message);
             }
@@ -44,7 +54,7 @@ module.exports = {
             }else {
                 module.exports.addExistingTrack(request, response, 1);
             }
-        })
+        })*/
     },
 
 
